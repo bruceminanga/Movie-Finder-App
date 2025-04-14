@@ -1,0 +1,6 @@
+/* src/pages/HomePage/HomePage.module.css */
+.homePage {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
