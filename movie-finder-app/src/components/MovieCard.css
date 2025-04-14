@@ -1,0 +1,35 @@
+.movie-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .movie-card:hover {
+      transform: scale(1.03);
+  }
+  
+  .movie-card img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .movie-card h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    min-height: 3em; /* Prevent layout shifts */
+  }
+  
+  .movie-card p {
+    font-size: 0.9em;
+    color: #555;
+  }
+
+  .movie-card-link {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit text color */
+  }

@@ -1,0 +1,53 @@
+/* src/components/MovieDetail.css */
+.movie-detail {
+    padding: 20px;
+    color: #333;
+  }
+  
+  .movie-detail h2 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .detail-content {
+    display: flex;
+    gap: 30px; /* Space between image and text */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .detail-content img {
+    max-width: 300px; /* Limit image size */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detail-text {
+    flex: 1; /* Allow text block to take remaining space */
+    min-width: 300px; /* Ensure text block has minimum width */
+  }
+  
+  .detail-text p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .detail-text strong {
+    margin-right: 5px;
+  }
+  
+  .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 8px 15px;
+      background-color: #eee;
+      color: #333;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+  }
+  
+  .back-link:hover {
+      background-color: #ddd;
+  }
