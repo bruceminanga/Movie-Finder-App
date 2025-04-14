@@ -1,0 +1,15 @@
+/* src/components/ErrorMessage/ErrorMessage.module.css */
+.errorContainer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .errorMessage {
+    color: #D8000C; /* Error red */
+    background-color: #FFD2D2; /* Light red background */
+    border: 1px solid #D8000C;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+  }

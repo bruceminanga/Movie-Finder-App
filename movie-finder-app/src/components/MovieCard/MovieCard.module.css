@@ -1,0 +1,56 @@
+/* src/components/MovieCard/MovieCard.module.css */
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Ensure link takes up card space */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-radius: 8px;
+   overflow: hidden; /* Clip potential overflow from scaling */
+   background-color: #fff; /* Card background */
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cardLink:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.movieCard {
+  text-align: center;
+  height: 100%; /* Make card fill the link space */
+  display: flex;
+  flex-direction: column;
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Cover the area, might crop */
+  aspect-ratio: 2 / 3; /* Maintain typical poster aspect ratio */
+  background-color: #eee; /* Placeholder bg */
+}
+
+.info {
+    padding: 10px;
+    flex-grow: 1; /* Allow info section to grow */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push title up, date down */
+}
+
+.title {
+  font-size: 1em; /* Slightly smaller */
+  margin: 5px 0;
+  min-height: 2.4em; /* Roughly 2 lines */
+   overflow: hidden; /* Prevent long titles breaking layout */
+   text-overflow: ellipsis; /* Add ... for overflow */
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* Limit to 2 lines */
+   -webkit-box-orient: vertical;
+}
+
+.releaseDate {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: auto; /* Push to bottom if space allows */
+}

@@ -1,0 +1,15 @@
+/* src/components/MovieList/MovieList.module.css */
+.movieList {
+    display: grid;
+    /* Best Practice: Responsive grid with min item width */
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .noMovies {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-style: italic;
+  }
